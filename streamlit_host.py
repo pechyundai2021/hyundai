@@ -32,4 +32,4 @@ if uploaded_file is not None:
         ypred = model.predict(img)
         ypred = ypred.round()
         a=ypred[0][0]
-        st.title("Predicted Label for the image is {}".format(map_dict [a]))
+        st.title("{}".format(map_dict [a]))
